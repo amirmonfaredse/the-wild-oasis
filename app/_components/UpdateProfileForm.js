@@ -2,12 +2,10 @@
 
 import Image from "next/image";
 import { updateProfile } from "../_lib/actions";
-import { useFormStatus } from "react-dom";
 import SubmitButton from "./SubmitButton";
 
 export default function UpdateProfileForm({ children, guest }) {
   const { fullName, email, nationality, nationalID, countryFlag } = guest;
-  console.log(guest);
 
   return (
     <form
